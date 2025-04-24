@@ -236,4 +236,4 @@ def check_spotify():
                          time.time() < session.get('spotify_token_expires', 0)
     })
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=True, port=8000, host="0.0.0.0")
