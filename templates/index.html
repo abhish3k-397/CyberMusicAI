@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERMUSIC AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="cyber-container">
+        <div class="cyber-header">
+            <div class="header-glitch" data-text="CYBERMUSIC AI">CYBERMUSIC AI</div>
+            <div class="cyber-subtitle">NEURAL SOUND INTERFACE v3.1.4</div>
+            <div class="header-buttons">
+                <button id="new-chat-btn" class="cyber-button">
+                    <i class="fas fa-sync-alt"></i> NEW CHAT
+                </button>
+                <div class="pulse-dot"></div>
+            </div>
+        </div>
+
+        <div id="chat-history" class="cyber-chat"></div>
+
+        <div class="cyber-input-area">
+            <input type="text" id="user-input" placeholder=">_ TRANSMIT MUSIC QUERY..." autocomplete="off">
+            <button id="send-btn" class="cyber-button send-button">
+                <i class="fas fa-paper-plane"></i> SEND
+            </button>
+        </div>
+        <div class="cyber-footer">
+            <span class="developer-name">Developed by</span>
+            <span class="developer-name">
+                <a href="https://github.com/abhish3k-397" target="_blank" rel="noopener noreferrer">ABHISHEK KRISHNA M</a>
+            </span>
+            <span class="developer-name">
+                <a href="https://github.com/BludAdit3220" target="_blank" rel="noopener noreferrer">ADITYA PARASHER</a>
+            </span>
+            <span class="developer-name">
+                <a href="https://github.com/SurichaSinha" target="_blank" rel="noopener noreferrer">SURICHA SINHA</a>
+            </span>
+        </div>
+
+        <div class="cyber-grid-lines"></div>
+        <div class="cyber-scanline"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
